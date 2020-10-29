@@ -48,6 +48,7 @@ getWeatherData(city)
  */
 showWeatherData = (weatherData) => {
   //CODE GOES HERE
+  const Img_src = "http://openweathermap.org/img/wn/"
   document.getElementById("city-name").innerText = weatherData.name;  
   document.getElementById("weather-type").innerText = weatherData.weather[0].main;
   document.getElementById("temp").innerText = weatherData.main.temp;
@@ -56,5 +57,6 @@ showWeatherData = (weatherData) => {
   document.getElementById("humidity").innerText = weatherData.main.humidity;
   document.getElementById("wind-speed").innerText = weatherData.wind.speed;
   document.getElementById("pressure").innerText = weatherData.main.pressure;
+  document.getElementById("weather-icon").innerHTML = `<img src="${Img_src}${weatherData.weather[0].icon}@2x.png" alt="${weatherData.weather[0].description}"/>`
 }
 

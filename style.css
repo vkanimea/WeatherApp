@@ -1,12 +1,18 @@
-
-
-
-#city-input, #weather-output {
-    max-width: 400px;
-    margin: 0 auto;
+#city-input,
+#weather-output {
+  max-width: 400px;
+  margin: 0 auto;
 }
-  
+
+#city-input,
+#searchbtn {
+  display: inline-block;
+  vertical-align: top;
+}
+
 .banner {
-    color: #FFD23F;
-    font-family: sans-serif;
+  color: #ffd23f;
+  font-family: sans-serif;
 }
+
+
